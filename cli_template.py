@@ -27,7 +27,9 @@ def main():
         elif command == 'quit' or command == 'q' or command == 'exit':
             flush_screen()
             exit()
+        elif command == '' or command == ' ':
+            continue
         else:
-            print("Invalid command")
+            print("'", command, "'", "Is not a recognized command, please refer to the help menu for available commands")
 
 main()
