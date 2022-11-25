@@ -13,14 +13,14 @@ def main_menu():
     line()
     print('Main menu')
     line()
-    print('commands:\nhelp - print this menu to list available commands\nclear, c - clear the screen\nquit, q, exit - exit the CLI')
+    print('commands:\nhelp, h - print this menu to list available commands\nclear, c - clear the screen\nquit, q, exit - exit the CLI')
 
 def main():
     flush_screen()
     main_menu()
     while True:
         command = input('>')
-        if command == 'help':
+        if command == 'help' or command == 'h':
             main_menu()
         elif command == 'c' or command == 'clear':
             flush_screen()
