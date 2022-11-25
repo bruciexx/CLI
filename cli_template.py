@@ -30,6 +30,6 @@ def main():
         elif command == '' or command == ' ':
             continue
         else:
-            print("'", command, "'", "Is not a recognized command, please refer to the help menu for available commands")
+            print("'" + command + "'", "is not a recognized command, please refer to the help menu for available commands")
 
 main()
